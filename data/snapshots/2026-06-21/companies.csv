@@ -1,0 +1,21 @@
+company,ticker,cat,price,mktcap,note,source
+Nvidia,NVDA,Chipmaker,~$211,~$5.1T,"Center of the loop: supplier and investor to OpenAI, xAI, CoreWeave, Anthropic",https://investor.nvidia.com/news/press-release-details/2025/OpenAI-and-NVIDIA-Announce-Strategic-Partnership-to-Deploy-10-Gigawatts-of-NVIDIA-Systems/default.aspx
+Microsoft,MSFT,Hyperscaler,~$379,~$2.82T,Owns ~27% of OpenAI; $250B Azure backlog,https://blogs.microsoft.com/blog/2025/10/28/the-next-chapter-of-the-microsoft-openai-partnership/
+Alphabet,GOOGL,Hyperscaler,~$367,~$4.5T,~14% of Anthropic; TPU deal; large paper gains,https://www.cnbc.com/2026/04/24/google-to-invest-up-to-40-billion-in-anthropic-as-search-giant-spreads-its-ai-bets.html
+Amazon,AMZN,Hyperscaler,~$244,~$2.63T,Anthropic backer ($8B+); $50B OpenAI commitment,https://www.aboutamazon.com/news/company-news/amazon-invests-additional-5-billion-anthropic-ai
+Broadcom,AVGO,Chipmaker,~$411,~$1.95T,OpenAI custom chips; AI revenue doubling,https://investors.broadcom.com/news-releases/news-release-details/openai-and-broadcom-announce-strategic-collaboration-deploy-10
+Meta,META,Hyperscaler,~$577,~$1.5T,AMD warrant deal; CoreWeave customer; huge capex,https://www.tomshardware.com/tech-industry/artificial-intelligence/amd-meta-100-billion-deal
+TSMC,TSM,Supply chain,~$462,~$2.4T,"Foundry for Nvidia, AMD and Broadcom",
+Oracle,ORCL,Cloud,~$184,~$530B,~$300B OpenAI / Stargate deal; heavy debt,https://www.theregister.com/special-features/2025/11/04/nvidia-openai-and-the-trillion-dollar-loop/
+AMD,AMD,Chipmaker,~$512,~$835B,Gave OpenAI and Meta ~10% warrant deals,https://ir.amd.com/news-events/press-releases/detail/1260/amd-and-openai-announce-strategic-partnership-to-deploy-6-gigawatts-of-amd-gpus
+SK Hynix,000660.KS,Supply chain,n/a,~$1.28T,HBM memory leader; +258% YTD,
+Samsung,005930.KS,Supply chain,n/a,~$1.5T,HBM4 memory; +164% YTD,
+Constellation,CEG,Energy,~$267,~$110B,Nuclear power deals with Microsoft and Meta,
+CoreWeave,CRWV,Cloud,n/a,n/a,Neocloud · Nvidia stake + $6.3B backstop; $66.8B backlog,https://www.fool.com/investing/2025/10/05/coreweave-nvidia-6-3-billion-backstop-explained/
+Nebius,NBIS,Cloud,~$287,~$72B,Neocloud; $2B Nvidia stake; +220% YTD,
+Vertiv,VRT,Infrastructure,~$305,n/a,Data-center cooling and power; +177% YoY,
+Micron,MU,Supply chain,~$458,n/a,HBM memory super-cycle; new highs,
+Arm,ARM,Chipmaker,~$439,n/a,Chip IP for AI silicon; +283% YTD,
+ASML,ASML,Supply chain,"~$1,930",n/a,EUV lithography monopoly,
+Super Micro,SMCI,Infrastructure,~$31,~$19.8B,AI servers; volatile on dilutive raise,
+Oklo,OKLO,Energy,~$61,~$10.5B,Small modular reactors (Meta); well off its highs,

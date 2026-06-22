@@ -1,0 +1,26 @@
+investor_id,recipient_id,investor,recipient,kind,group,amount,status,verified,source
+nvidia,openai,Nvidia,OpenAI,Equity investment,invest,Up to $100B,loi,2025-09-22,https://openai.com/index/openai-nvidia-systems-partnership/
+openai,nvidia,OpenAI,Nvidia,Chip purchases,spend,10+ GW of systems,reported,2025-09-22,https://openai.com/index/openai-nvidia-systems-partnership/
+microsoft,openai,Microsoft,OpenAI,Equity stake,invest,~27% · $13.8B in,confirmed,2025-10-28,https://blogs.microsoft.com/blog/2025/10/28/the-next-chapter-of-the-microsoft-openai-partnership/
+openai,microsoft,OpenAI,Microsoft,Cloud commitment,spend,$250B Azure,confirmed,2025-10-28,https://blogs.microsoft.com/blog/2025/10/28/the-next-chapter-of-the-microsoft-openai-partnership/
+openai,oracle,OpenAI,Oracle,Cloud commitment,spend,~$300B / 5 yrs,reported,2025-09-10,https://www.theregister.com/special-features/2025/11/04/nvidia-openai-and-the-trillion-dollar-loop/
+oracle,nvidia,Oracle,Nvidia,Chip purchases (Stargate),spend,GPU buildout,reported,2025-01-21,https://openai.com/index/announcing-the-stargate-project/
+amd,openai,AMD,OpenAI,Warrant (equity),invest,Warrant ~10% of AMD,confirmed,2025-10-06,https://ir.amd.com/news-events/press-releases/detail/1260/amd-and-openai-announce-strategic-partnership-to-deploy-6-gigawatts-of-amd-gpus
+openai,amd,OpenAI,AMD,Chip purchases,spend,6 GW Instinct,confirmed,2025-10-06,https://ir.amd.com/news-events/press-releases/detail/1260/amd-and-openai-announce-strategic-partnership-to-deploy-6-gigawatts-of-amd-gpus
+amd,meta,AMD,Meta,Warrant + supply,invest,Warrant + 6 GW,reported,2026-02-24,https://www.tomshardware.com/tech-industry/artificial-intelligence/amd-meta-100-billion-deal
+nvidia,coreweave,Nvidia,CoreWeave,Equity + backstop,backstop,~11.5% + $6.3B backstop,confirmed,2025-10-05,https://www.fool.com/investing/2025/10/05/coreweave-nvidia-6-3-billion-backstop-explained/
+coreweave,nvidia,CoreWeave,Nvidia,Chip purchases,spend,GPU purchases,confirmed,2025-10-05,https://www.fool.com/investing/2025/10/05/coreweave-nvidia-6-3-billion-backstop-explained/
+microsoft,coreweave,Microsoft,CoreWeave,Anchor customer,spend,Capacity rental,confirmed,2026-03-11,https://www.bloomberg.com/graphics/2026-ai-circular-deals/
+openai,coreweave,OpenAI,CoreWeave,Capacity deal,spend,Multi-year,confirmed,2026-03-11,https://www.bloomberg.com/graphics/2026-ai-circular-deals/
+meta,coreweave,Meta,CoreWeave,Capacity deal,spend,~$14.2B,reported,2026-03-11,https://www.bloomberg.com/graphics/2026-ai-circular-deals/
+nvidia,xai,Nvidia,xAI,Equity investment,invest,Up to ~$2B,confirmed,2026-03-11,https://www.bloomberg.com/graphics/2026-ai-circular-deals/
+xai,nvidia,xAI,Nvidia,Chip purchases,spend,Colossus 2 GPUs,reported,2026-03-11,https://www.bloomberg.com/graphics/2026-ai-circular-deals/
+amazon,anthropic,Amazon,Anthropic,Equity investment,invest,$8B+,confirmed,2026-04-20,https://www.aboutamazon.com/news/company-news/amazon-invests-additional-5-billion-anthropic-ai
+anthropic,amazon,Anthropic,Amazon,Cloud commitment,spend,$100B+ AWS,confirmed,2026-04-20,https://www.aboutamazon.com/news/company-news/amazon-invests-additional-5-billion-anthropic-ai
+alphabet,anthropic,Alphabet,Anthropic,Equity stake,invest,~14% · +$40B,confirmed,2026-04-24,https://www.cnbc.com/2026/04/24/google-to-invest-up-to-40-billion-in-anthropic-as-search-giant-spreads-its-ai-bets.html
+nvidia,anthropic,Nvidia,Anthropic,Equity investment,invest,Up to $10B,reported,2025-11-18,https://www.bloomberg.com/news/articles/2025-11-18/microsoft-nvidia-to-invest-up-to-15-billion-in-anthropic
+microsoft,anthropic,Microsoft,Anthropic,Equity investment,invest,Up to $5B,reported,2025-11-18,https://www.bloomberg.com/news/articles/2025-11-18/microsoft-nvidia-to-invest-up-to-15-billion-in-anthropic
+anthropic,microsoft,Anthropic,Microsoft,Cloud commitment,spend,$30B Azure,reported,2025-11-18,https://www.bloomberg.com/news/articles/2025-11-18/microsoft-nvidia-to-invest-up-to-15-billion-in-anthropic
+broadcom,openai,Broadcom,OpenAI,Custom accelerators,invest,Co-developed chips,stalled,2025-10-13,https://investors.broadcom.com/news-releases/news-release-details/openai-and-broadcom-announce-strategic-collaboration-deploy-10
+openai,broadcom,OpenAI,Broadcom,Chip program,spend,10 GW / ~$10B,stalled,2025-10-13,https://investors.broadcom.com/news-releases/news-release-details/openai-and-broadcom-announce-strategic-collaboration-deploy-10
+softbank,openai,SoftBank,OpenAI,Capital (round),invest,$30B,confirmed,2026-03-31,https://www.cnbc.com/2026/03/31/openai-funding-round-ipo.html

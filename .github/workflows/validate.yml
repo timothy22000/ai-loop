@@ -1,0 +1,23 @@
+name: Validate data
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install jsonschema pytest
+      - name: Validate against JSON Schema
+        run: python scripts/validate.py
+      - name: Run data tests
+        run: pytest -q
+      - name: Check the page is in sync with the data
+        run: python scripts/build.py --check

@@ -1,0 +1,805 @@
+{
+  "meta": {
+    "title": "The AI Loop",
+    "tagline": "The circular economy of AI, mapped.",
+    "lastUpdated": "2026-06-21",
+    "lastUpdatedLabel": "21 June 2026",
+    "note": "Compiled from public reporting. 'Reported' and 'letter of intent' figures are not confirmed cash. Not investment advice.",
+    "pricesAsOf": "2026-06-21",
+    "sourcesNote": "Each deal links to a primary announcement or major-outlet report. Status reflects our reading of the latest reporting, not the source alone. Share prices are dated snapshots, not individually cited."
+  },
+  "tape": [
+    {
+      "label": "NVDA",
+      "value": "~$5.1T market cap"
+    },
+    {
+      "label": "MAG 7",
+      "value": "33.8% of the S&P 500"
+    },
+    {
+      "label": "OPENAI",
+      "value": "~$852B · filed to IPO"
+    },
+    {
+      "label": "ANTHROPIC",
+      "value": "~$965B"
+    },
+    {
+      "label": "xAI",
+      "value": "~$230B"
+    },
+    {
+      "label": "NUCLEAR",
+      "value": "~13 GW signed",
+      "teal": true
+    },
+    {
+      "label": "E-WASTE",
+      "value": "22.3% recycled",
+      "teal": true
+    },
+    {
+      "label": "STARGATE",
+      "value": ">$400B committed"
+    },
+    {
+      "label": "AMD",
+      "value": "warrant ~10% to OpenAI"
+    },
+    {
+      "label": "MSFT",
+      "value": "owns ~27% of OpenAI"
+    }
+  ],
+  "nodes": [
+    {
+      "id": "nvidia",
+      "name": "Nvidia",
+      "type": "Chipmaker",
+      "x": 500,
+      "y": 390,
+      "big": true
+    },
+    {
+      "id": "openai",
+      "name": "OpenAI",
+      "type": "Model lab",
+      "x": 290,
+      "y": 320,
+      "big": true
+    },
+    {
+      "id": "anthropic",
+      "name": "Anthropic",
+      "type": "Model lab",
+      "x": 250,
+      "y": 560
+    },
+    {
+      "id": "xai",
+      "name": "xAI",
+      "type": "Model lab",
+      "x": 735,
+      "y": 205
+    },
+    {
+      "id": "microsoft",
+      "name": "Microsoft",
+      "type": "Hyperscaler",
+      "x": 275,
+      "y": 135
+    },
+    {
+      "id": "amazon",
+      "name": "Amazon",
+      "type": "Hyperscaler",
+      "x": 110,
+      "y": 445
+    },
+    {
+      "id": "alphabet",
+      "name": "Alphabet",
+      "type": "Hyperscaler",
+      "x": 160,
+      "y": 650
+    },
+    {
+      "id": "meta",
+      "name": "Meta",
+      "type": "Hyperscaler",
+      "x": 485,
+      "y": 680
+    },
+    {
+      "id": "oracle",
+      "name": "Oracle",
+      "type": "Cloud",
+      "x": 545,
+      "y": 150
+    },
+    {
+      "id": "coreweave",
+      "name": "CoreWeave",
+      "type": "Neocloud",
+      "x": 705,
+      "y": 505
+    },
+    {
+      "id": "amd",
+      "name": "AMD",
+      "type": "Chipmaker",
+      "x": 805,
+      "y": 585
+    },
+    {
+      "id": "broadcom",
+      "name": "Broadcom",
+      "type": "Chipmaker",
+      "x": 890,
+      "y": 400
+    },
+    {
+      "id": "softbank",
+      "name": "SoftBank",
+      "type": "Capital",
+      "x": 95,
+      "y": 250
+    },
+    {
+      "id": "arm",
+      "name": "Arm",
+      "type": "Chip IP",
+      "x": 500,
+      "y": -30,
+      "ext": true
+    },
+    {
+      "id": "asml",
+      "name": "ASML",
+      "type": "Equipment",
+      "x": 821,
+      "y": 48,
+      "ext": true
+    },
+    {
+      "id": "samsung",
+      "name": "Samsung",
+      "type": "Memory",
+      "x": 985,
+      "y": 185,
+      "ext": true
+    },
+    {
+      "id": "skhynix",
+      "name": "SK Hynix",
+      "type": "Memory",
+      "x": 1054,
+      "y": 340,
+      "ext": true
+    },
+    {
+      "id": "tsmc",
+      "name": "TSMC",
+      "type": "Foundry",
+      "x": 1041,
+      "y": 511,
+      "ext": true
+    },
+    {
+      "id": "micron",
+      "name": "Micron",
+      "type": "Memory",
+      "x": 929,
+      "y": 676,
+      "ext": true
+    },
+    {
+      "id": "smci",
+      "name": "Super Micro",
+      "type": "Servers",
+      "x": 692,
+      "y": 804,
+      "ext": true
+    },
+    {
+      "id": "vertiv",
+      "name": "Vertiv",
+      "type": "Infrastructure",
+      "x": 355,
+      "y": 815,
+      "ext": true
+    },
+    {
+      "id": "oklo",
+      "name": "Oklo",
+      "type": "Energy",
+      "x": 71,
+      "y": 676,
+      "ext": true
+    },
+    {
+      "id": "constellation",
+      "name": "Constellation",
+      "type": "Energy",
+      "x": -58,
+      "y": 437,
+      "ext": true
+    },
+    {
+      "id": "nebius",
+      "name": "Nebius",
+      "type": "Neocloud",
+      "x": 15,
+      "y": 185,
+      "ext": true
+    }
+  ],
+  "edges": [
+    {
+      "from": "nvidia",
+      "to": "openai",
+      "kind": "Equity investment",
+      "group": "invest",
+      "amt": "Up to $100B",
+      "status": "loi",
+      "source": "https://openai.com/index/openai-nvidia-systems-partnership/",
+      "verified": "2025-09-22"
+    },
+    {
+      "from": "openai",
+      "to": "nvidia",
+      "kind": "Chip purchases",
+      "group": "spend",
+      "amt": "10+ GW of systems",
+      "status": "reported",
+      "source": "https://openai.com/index/openai-nvidia-systems-partnership/",
+      "verified": "2025-09-22"
+    },
+    {
+      "from": "microsoft",
+      "to": "openai",
+      "kind": "Equity stake",
+      "group": "invest",
+      "amt": "~27% · $13.8B in",
+      "status": "confirmed",
+      "source": "https://blogs.microsoft.com/blog/2025/10/28/the-next-chapter-of-the-microsoft-openai-partnership/",
+      "verified": "2025-10-28"
+    },
+    {
+      "from": "openai",
+      "to": "microsoft",
+      "kind": "Cloud commitment",
+      "group": "spend",
+      "amt": "$250B Azure",
+      "status": "confirmed",
+      "source": "https://blogs.microsoft.com/blog/2025/10/28/the-next-chapter-of-the-microsoft-openai-partnership/",
+      "verified": "2025-10-28"
+    },
+    {
+      "from": "openai",
+      "to": "oracle",
+      "kind": "Cloud commitment",
+      "group": "spend",
+      "amt": "~$300B / 5 yrs",
+      "status": "reported",
+      "source": "https://www.theregister.com/special-features/2025/11/04/nvidia-openai-and-the-trillion-dollar-loop/",
+      "verified": "2025-09-10"
+    },
+    {
+      "from": "oracle",
+      "to": "nvidia",
+      "kind": "Chip purchases (Stargate)",
+      "group": "spend",
+      "amt": "GPU buildout",
+      "status": "reported",
+      "source": "https://openai.com/index/announcing-the-stargate-project/",
+      "verified": "2025-01-21"
+    },
+    {
+      "from": "amd",
+      "to": "openai",
+      "kind": "Warrant (equity)",
+      "group": "invest",
+      "amt": "Warrant ~10% of AMD",
+      "status": "confirmed",
+      "source": "https://ir.amd.com/news-events/press-releases/detail/1260/amd-and-openai-announce-strategic-partnership-to-deploy-6-gigawatts-of-amd-gpus",
+      "verified": "2025-10-06"
+    },
+    {
+      "from": "openai",
+      "to": "amd",
+      "kind": "Chip purchases",
+      "group": "spend",
+      "amt": "6 GW Instinct",
+      "status": "confirmed",
+      "source": "https://ir.amd.com/news-events/press-releases/detail/1260/amd-and-openai-announce-strategic-partnership-to-deploy-6-gigawatts-of-amd-gpus",
+      "verified": "2025-10-06"
+    },
+    {
+      "from": "amd",
+      "to": "meta",
+      "kind": "Warrant + supply",
+      "group": "invest",
+      "amt": "Warrant + 6 GW",
+      "status": "reported",
+      "source": "https://www.tomshardware.com/tech-industry/artificial-intelligence/amd-meta-100-billion-deal",
+      "verified": "2026-02-24"
+    },
+    {
+      "from": "nvidia",
+      "to": "coreweave",
+      "kind": "Equity + backstop",
+      "group": "backstop",
+      "amt": "~11.5% + $6.3B backstop",
+      "status": "confirmed",
+      "source": "https://www.fool.com/investing/2025/10/05/coreweave-nvidia-6-3-billion-backstop-explained/",
+      "verified": "2025-10-05"
+    },
+    {
+      "from": "coreweave",
+      "to": "nvidia",
+      "kind": "Chip purchases",
+      "group": "spend",
+      "amt": "GPU purchases",
+      "status": "confirmed",
+      "source": "https://www.fool.com/investing/2025/10/05/coreweave-nvidia-6-3-billion-backstop-explained/",
+      "verified": "2025-10-05"
+    },
+    {
+      "from": "microsoft",
+      "to": "coreweave",
+      "kind": "Anchor customer",
+      "group": "spend",
+      "amt": "Capacity rental",
+      "status": "confirmed",
+      "source": "https://www.bloomberg.com/graphics/2026-ai-circular-deals/",
+      "verified": "2026-03-11"
+    },
+    {
+      "from": "openai",
+      "to": "coreweave",
+      "kind": "Capacity deal",
+      "group": "spend",
+      "amt": "Multi-year",
+      "status": "confirmed",
+      "source": "https://www.bloomberg.com/graphics/2026-ai-circular-deals/",
+      "verified": "2026-03-11"
+    },
+    {
+      "from": "meta",
+      "to": "coreweave",
+      "kind": "Capacity deal",
+      "group": "spend",
+      "amt": "~$14.2B",
+      "status": "reported",
+      "source": "https://www.bloomberg.com/graphics/2026-ai-circular-deals/",
+      "verified": "2026-03-11"
+    },
+    {
+      "from": "nvidia",
+      "to": "xai",
+      "kind": "Equity investment",
+      "group": "invest",
+      "amt": "Up to ~$2B",
+      "status": "confirmed",
+      "source": "https://www.bloomberg.com/graphics/2026-ai-circular-deals/",
+      "verified": "2026-03-11"
+    },
+    {
+      "from": "xai",
+      "to": "nvidia",
+      "kind": "Chip purchases",
+      "group": "spend",
+      "amt": "Colossus 2 GPUs",
+      "status": "reported",
+      "source": "https://www.bloomberg.com/graphics/2026-ai-circular-deals/",
+      "verified": "2026-03-11"
+    },
+    {
+      "from": "amazon",
+      "to": "anthropic",
+      "kind": "Equity investment",
+      "group": "invest",
+      "amt": "$8B+",
+      "status": "confirmed",
+      "source": "https://www.aboutamazon.com/news/company-news/amazon-invests-additional-5-billion-anthropic-ai",
+      "verified": "2026-04-20"
+    },
+    {
+      "from": "anthropic",
+      "to": "amazon",
+      "kind": "Cloud commitment",
+      "group": "spend",
+      "amt": "$100B+ AWS",
+      "status": "confirmed",
+      "source": "https://www.aboutamazon.com/news/company-news/amazon-invests-additional-5-billion-anthropic-ai",
+      "verified": "2026-04-20"
+    },
+    {
+      "from": "alphabet",
+      "to": "anthropic",
+      "kind": "Equity stake",
+      "group": "invest",
+      "amt": "~14% · +$40B",
+      "status": "confirmed",
+      "source": "https://www.cnbc.com/2026/04/24/google-to-invest-up-to-40-billion-in-anthropic-as-search-giant-spreads-its-ai-bets.html",
+      "verified": "2026-04-24"
+    },
+    {
+      "from": "nvidia",
+      "to": "anthropic",
+      "kind": "Equity investment",
+      "group": "invest",
+      "amt": "Up to $10B",
+      "status": "reported",
+      "source": "https://www.bloomberg.com/news/articles/2025-11-18/microsoft-nvidia-to-invest-up-to-15-billion-in-anthropic",
+      "verified": "2025-11-18"
+    },
+    {
+      "from": "microsoft",
+      "to": "anthropic",
+      "kind": "Equity investment",
+      "group": "invest",
+      "amt": "Up to $5B",
+      "status": "reported",
+      "source": "https://www.bloomberg.com/news/articles/2025-11-18/microsoft-nvidia-to-invest-up-to-15-billion-in-anthropic",
+      "verified": "2025-11-18"
+    },
+    {
+      "from": "anthropic",
+      "to": "microsoft",
+      "kind": "Cloud commitment",
+      "group": "spend",
+      "amt": "$30B Azure",
+      "status": "reported",
+      "source": "https://www.bloomberg.com/news/articles/2025-11-18/microsoft-nvidia-to-invest-up-to-15-billion-in-anthropic",
+      "verified": "2025-11-18"
+    },
+    {
+      "from": "broadcom",
+      "to": "openai",
+      "kind": "Custom accelerators",
+      "group": "invest",
+      "amt": "Co-developed chips",
+      "status": "stalled",
+      "source": "https://investors.broadcom.com/news-releases/news-release-details/openai-and-broadcom-announce-strategic-collaboration-deploy-10",
+      "verified": "2025-10-13"
+    },
+    {
+      "from": "openai",
+      "to": "broadcom",
+      "kind": "Chip program",
+      "group": "spend",
+      "amt": "10 GW / ~$10B",
+      "status": "stalled",
+      "source": "https://investors.broadcom.com/news-releases/news-release-details/openai-and-broadcom-announce-strategic-collaboration-deploy-10",
+      "verified": "2025-10-13"
+    },
+    {
+      "from": "softbank",
+      "to": "openai",
+      "kind": "Capital (round)",
+      "group": "invest",
+      "amt": "$30B",
+      "status": "confirmed",
+      "source": "https://www.cnbc.com/2026/03/31/openai-funding-round-ipo.html",
+      "verified": "2026-03-31"
+    }
+  ],
+  "companies": [
+    {
+      "company": "Nvidia",
+      "ticker": "NVDA",
+      "price": "~$211",
+      "mktcap": "~$5.1T",
+      "note": "Center of the loop: supplier and investor to OpenAI, xAI, CoreWeave, Anthropic",
+      "source": "https://investor.nvidia.com/news/press-release-details/2025/OpenAI-and-NVIDIA-Announce-Strategic-Partnership-to-Deploy-10-Gigawatts-of-NVIDIA-Systems/default.aspx",
+      "cat": "Chipmaker"
+    },
+    {
+      "company": "Microsoft",
+      "ticker": "MSFT",
+      "price": "~$379",
+      "mktcap": "~$2.82T",
+      "note": "Owns ~27% of OpenAI; $250B Azure backlog",
+      "source": "https://blogs.microsoft.com/blog/2025/10/28/the-next-chapter-of-the-microsoft-openai-partnership/",
+      "cat": "Hyperscaler"
+    },
+    {
+      "company": "Alphabet",
+      "ticker": "GOOGL",
+      "price": "~$367",
+      "mktcap": "~$4.5T",
+      "note": "~14% of Anthropic; TPU deal; large paper gains",
+      "source": "https://www.cnbc.com/2026/04/24/google-to-invest-up-to-40-billion-in-anthropic-as-search-giant-spreads-its-ai-bets.html",
+      "cat": "Hyperscaler"
+    },
+    {
+      "company": "Amazon",
+      "ticker": "AMZN",
+      "price": "~$244",
+      "mktcap": "~$2.63T",
+      "note": "Anthropic backer ($8B+); $50B OpenAI commitment",
+      "source": "https://www.aboutamazon.com/news/company-news/amazon-invests-additional-5-billion-anthropic-ai",
+      "cat": "Hyperscaler"
+    },
+    {
+      "company": "Broadcom",
+      "ticker": "AVGO",
+      "price": "~$411",
+      "mktcap": "~$1.95T",
+      "note": "OpenAI custom chips; AI revenue doubling",
+      "source": "https://investors.broadcom.com/news-releases/news-release-details/openai-and-broadcom-announce-strategic-collaboration-deploy-10",
+      "cat": "Chipmaker"
+    },
+    {
+      "company": "Meta",
+      "ticker": "META",
+      "price": "~$577",
+      "mktcap": "~$1.5T",
+      "note": "AMD warrant deal; CoreWeave customer; huge capex",
+      "source": "https://www.tomshardware.com/tech-industry/artificial-intelligence/amd-meta-100-billion-deal",
+      "cat": "Hyperscaler"
+    },
+    {
+      "company": "TSMC",
+      "ticker": "TSM",
+      "price": "~$462",
+      "mktcap": "~$2.4T",
+      "note": "Foundry for Nvidia, AMD and Broadcom",
+      "cat": "Supply chain"
+    },
+    {
+      "company": "Oracle",
+      "ticker": "ORCL",
+      "price": "~$184",
+      "mktcap": "~$530B",
+      "note": "~$300B OpenAI / Stargate deal; heavy debt",
+      "source": "https://www.theregister.com/special-features/2025/11/04/nvidia-openai-and-the-trillion-dollar-loop/",
+      "cat": "Cloud"
+    },
+    {
+      "company": "AMD",
+      "ticker": "AMD",
+      "price": "~$512",
+      "mktcap": "~$835B",
+      "note": "Gave OpenAI and Meta ~10% warrant deals",
+      "source": "https://ir.amd.com/news-events/press-releases/detail/1260/amd-and-openai-announce-strategic-partnership-to-deploy-6-gigawatts-of-amd-gpus",
+      "cat": "Chipmaker"
+    },
+    {
+      "company": "SK Hynix",
+      "ticker": "000660.KS",
+      "price": "n/a",
+      "mktcap": "~$1.28T",
+      "note": "HBM memory leader; +258% YTD",
+      "cat": "Supply chain"
+    },
+    {
+      "company": "Samsung",
+      "ticker": "005930.KS",
+      "price": "n/a",
+      "mktcap": "~$1.5T",
+      "note": "HBM4 memory; +164% YTD",
+      "cat": "Supply chain"
+    },
+    {
+      "company": "Constellation",
+      "ticker": "CEG",
+      "price": "~$267",
+      "mktcap": "~$110B",
+      "note": "Nuclear power deals with Microsoft and Meta",
+      "cat": "Energy"
+    },
+    {
+      "company": "CoreWeave",
+      "ticker": "CRWV",
+      "price": "n/a",
+      "mktcap": "n/a",
+      "note": "Neocloud · Nvidia stake + $6.3B backstop; $66.8B backlog",
+      "source": "https://www.fool.com/investing/2025/10/05/coreweave-nvidia-6-3-billion-backstop-explained/",
+      "cat": "Cloud"
+    },
+    {
+      "company": "Nebius",
+      "ticker": "NBIS",
+      "price": "~$287",
+      "mktcap": "~$72B",
+      "note": "Neocloud; $2B Nvidia stake; +220% YTD",
+      "cat": "Cloud"
+    },
+    {
+      "company": "Vertiv",
+      "ticker": "VRT",
+      "price": "~$305",
+      "mktcap": "n/a",
+      "note": "Data-center cooling and power; +177% YoY",
+      "cat": "Infrastructure"
+    },
+    {
+      "company": "Micron",
+      "ticker": "MU",
+      "price": "~$458",
+      "mktcap": "n/a",
+      "note": "HBM memory super-cycle; new highs",
+      "cat": "Supply chain"
+    },
+    {
+      "company": "Arm",
+      "ticker": "ARM",
+      "price": "~$439",
+      "mktcap": "n/a",
+      "note": "Chip IP for AI silicon; +283% YTD",
+      "cat": "Chipmaker"
+    },
+    {
+      "company": "ASML",
+      "ticker": "ASML",
+      "price": "~$1,930",
+      "mktcap": "n/a",
+      "note": "EUV lithography monopoly",
+      "cat": "Supply chain"
+    },
+    {
+      "company": "Super Micro",
+      "ticker": "SMCI",
+      "price": "~$31",
+      "mktcap": "~$19.8B",
+      "note": "AI servers; volatile on dilutive raise",
+      "cat": "Infrastructure"
+    },
+    {
+      "company": "Oklo",
+      "ticker": "OKLO",
+      "price": "~$61",
+      "mktcap": "~$10.5B",
+      "note": "Small modular reactors (Meta); well off its highs",
+      "cat": "Energy"
+    }
+  ],
+  "loops": [
+    {
+      "id": "nvidia-openai",
+      "label": "Nvidia ⇄ OpenAI",
+      "nodes": [
+        "nvidia",
+        "openai"
+      ],
+      "note": "The original loop. Nvidia commits up to $100B to OpenAI; OpenAI spends it building data centers full of Nvidia systems. The investment and the revenue are the same dollars."
+    },
+    {
+      "id": "stargate-triangle",
+      "label": "Nvidia → OpenAI → Oracle → Nvidia",
+      "nodes": [
+        "nvidia",
+        "openai",
+        "oracle"
+      ],
+      "note": "The Stargate triangle. Nvidia funds OpenAI, OpenAI commits about $300B to Oracle for cloud, and Oracle buys Nvidia GPUs to deliver it. The money leaves Nvidia and comes back."
+    },
+    {
+      "id": "microsoft-openai",
+      "label": "Microsoft ⇄ OpenAI",
+      "nodes": [
+        "microsoft",
+        "openai"
+      ],
+      "note": "Microsoft holds roughly 27% of OpenAI; OpenAI has committed $250B back to Microsoft Azure. The stake and the cloud bill point in opposite directions."
+    },
+    {
+      "id": "amazon-anthropic",
+      "label": "Amazon ⇄ Anthropic",
+      "nodes": [
+        "amazon",
+        "anthropic"
+      ],
+      "note": "Amazon has put $8B+ into Anthropic; Anthropic has committed $100B+ back to AWS and its Trainium chips. The same shape as the Nvidia loop, one layer up the stack."
+    },
+    {
+      "id": "amd-openai",
+      "label": "AMD ⇄ OpenAI",
+      "nodes": [
+        "amd",
+        "openai"
+      ],
+      "note": "AMD handed OpenAI a warrant for up to ~10% of the company; OpenAI agreed to deploy 6GW of AMD GPUs. Equity out, chip orders back."
+    },
+    {
+      "id": "nvidia-coreweave",
+      "label": "Nvidia ⇄ CoreWeave",
+      "nodes": [
+        "nvidia",
+        "coreweave"
+      ],
+      "note": "Nvidia holds equity in CoreWeave and backstops its unsold capacity; CoreWeave spends heavily on Nvidia chips. A backstop that helps fund the purchase of the backstopper's own product."
+    }
+  ],
+  "supply": [
+    {
+      "from": "tsmc",
+      "to": "nvidia",
+      "kind": "Fabricates GPUs"
+    },
+    {
+      "from": "tsmc",
+      "to": "amd",
+      "kind": "Fabricates GPUs"
+    },
+    {
+      "from": "tsmc",
+      "to": "broadcom",
+      "kind": "Fabricates custom silicon"
+    },
+    {
+      "from": "asml",
+      "to": "tsmc",
+      "kind": "EUV lithography"
+    },
+    {
+      "from": "asml",
+      "to": "samsung",
+      "kind": "EUV lithography"
+    },
+    {
+      "from": "skhynix",
+      "to": "nvidia",
+      "kind": "HBM memory"
+    },
+    {
+      "from": "samsung",
+      "to": "nvidia",
+      "kind": "HBM memory"
+    },
+    {
+      "from": "micron",
+      "to": "nvidia",
+      "kind": "HBM memory"
+    },
+    {
+      "from": "arm",
+      "to": "nvidia",
+      "kind": "CPU IP (Grace)"
+    },
+    {
+      "from": "arm",
+      "to": "amazon",
+      "kind": "CPU IP (Graviton)"
+    },
+    {
+      "from": "constellation",
+      "to": "microsoft",
+      "kind": "Nuclear power"
+    },
+    {
+      "from": "oklo",
+      "to": "meta",
+      "kind": "Nuclear power (planned)"
+    },
+    {
+      "from": "vertiv",
+      "to": "coreweave",
+      "kind": "Power & cooling"
+    },
+    {
+      "from": "vertiv",
+      "to": "oracle",
+      "kind": "Power & cooling"
+    },
+    {
+      "from": "smci",
+      "to": "xai",
+      "kind": "AI servers"
+    },
+    {
+      "from": "smci",
+      "to": "coreweave",
+      "kind": "AI servers"
+    },
+    {
+      "from": "nebius",
+      "to": "microsoft",
+      "kind": "Rented GPU capacity"
+    }
+  ]
+}

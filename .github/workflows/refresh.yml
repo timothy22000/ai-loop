@@ -1,0 +1,61 @@
+name: Refresh data (manual)
+
+# This NEVER runs on a schedule. It runs only when you start it:
+#   - GitHub: Actions tab -> "Refresh data (manual)" -> Run workflow
+#   - Terminal: gh workflow run "Refresh data (manual)" -f mode=commit
+# One-time setup for the "commit" option:
+#   Settings -> Actions -> General -> Workflow permissions -> "Read and write permissions".
+
+on:
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: "What to do after refreshing"
+        type: choice
+        default: preview
+        options:
+          - preview   # just show the diff in the run summary, change nothing
+          - commit    # refresh and commit the result to this branch
+      message:
+        description: "Commit message (used when mode = commit)"
+        type: string
+        default: "chore: manual data refresh"
+
+permissions:
+  contents: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install yfinance
+      - name: Refresh prices and rebuild
+        run: |
+          python scripts/refresh_prices.py
+          python scripts/build.py
+      - name: Show what changed
+        run: |
+          {
+            echo "## Data refresh"
+            if git diff --quiet -- data/; then
+              echo "_No changes._"
+            else
+              echo '```diff'
+              git diff -- data/deals.json
+              echo '```'
+            fi
+            echo ""
+            echo "Mode: **${{ inputs.mode }}**"
+          } >> "$GITHUB_STEP_SUMMARY"
+      - name: Commit
+        if: ${{ inputs.mode == 'commit' }}
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git diff --staged --quiet || git commit -m "${{ inputs.message }}"
+          git push
