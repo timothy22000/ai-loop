@@ -3,15 +3,15 @@
 Notable data and feature changes. Dates are when the snapshot was compiled.
 
 ## 2026-06-21: Research integration (capex gap, supply chain, look-through)
-- Folded three June 2026 research briefings (bear-thesis stress test, picks-and-shovels supply map, public-market look-through) into the FT edition.
+- Folded three June 2026 research briefings (bear-thesis stress test, picks-and-shovels supply map, public-market look-through) into the pink-paper edition.
 - Money loop: added SpaceX as a node (now xAI's parent after the February 2026 merger) and five newly sourced deals: Anthropic's ~$1.25B/month Colossus rental, Google's ~$920M/month bridge compute, the xAI/SpaceX merger, Anthropic's ~$200B Google TPU commitment (closing the Alphabet loop), and OpenAI's $38B AWS deal. Surfaced the Alphabet/Anthropic and Nvidia/xAI cycles.
 - Supply chain: added the power layer (GE Vernova, Eaton) and Marvell to the outer ring, and recast the materials section around power as the binding constraint, with backlog proof points (GE Vernova $163B, ASML EUR 38.8B, Broadcom $73B).
 - Companies: grew the table to 33 names across new Power, Networking, Equipment and Space categories, with matching filter chips.
 - Narrative: deepened Bubble or Boom with named voices (Kupperman, MIT NANDA, Nadella, enterprise adoption) and a seven-signal "what would settle it" strip; added a look-through panel showing how the Magnificent 7 already hold OpenAI, Anthropic and SpaceX; refreshed the ticker (capex-vs-revenue gap, SpaceX IPO, HBM) and added realized-vs-run-rate and gross-vs-net caveats.
 - Every new deal carries a primary source and verified date; supply links remain structural context. No em-dashes; overlap-free in both views; all tests pass.
 
-## 2026-06-21: Financial Times edition
-- Reskinned the site in the style of the Financial Times: the signature salmon-pink paper (#FFF1E5), a serif display face (Source Serif 4) for headlines, and FT brand accents - Oxford blue (investment), teal (spending), and claret (risk).
+## 2026-06-21: Pink-paper edition
+- Reskinned the site in a pink-paper broadsheet style: the signature salmon-pink paper (#FFF1E5), a serif display face (Source Serif 4) for headlines, and editorial accents - Oxford blue (investment), teal (spending), and claret (risk).
 - Gave every section title its own editorial line-symbol (a loop, a coin, a balance scale, a lightning bolt, a node network, a pie) in place of the single generic mark.
 - Regenerated the social card and favicons to match. Sections, content, data, and all interactions are unchanged. Kept as a separate edition alongside the original.
 

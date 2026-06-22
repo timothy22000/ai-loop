@@ -1,6 +1,6 @@
-# The AI Loop: Financial Times edition
+# The AI Loop: pink-paper edition
 
-> A reskin of The AI Loop in the visual language of the Financial Times (salmon paper, serif headlines, Oxford-blue / teal / claret accents). Same sections and interactions as the base project; the June 2026 research expansion (SpaceX, the power layer, the seven-signal debate strip and the look-through proxies) landed in this edition first.
+> A reskin of The AI Loop in a pink-paper broadsheet style (salmon paper, serif headlines, Oxford-blue / teal / claret accents). Same sections and interactions as the base project; the June 2026 research expansion (SpaceX, the power layer, the seven-signal debate strip and the look-through proxies) landed in this edition first.
 
 **An interactive map of the circular economy of AI**: who invests in whom, who buys it back, the share prices, the energy it burns, and the bubble debate. A single self-contained web page built from public reporting, current through June 2026.
 
