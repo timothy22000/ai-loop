@@ -8,7 +8,7 @@
 
 > The money goes in circles. So do the chips. Nvidia funds OpenAI, which buys Nvidia chips. AMD hands OpenAI a slice of itself in exchange for orders. Microsoft, Amazon and Google pour billions into model labs that pour it back into their clouds.
 
-**Live demo:** [timothy22000.github.io/ai-loop](https://timothy22000.github.io/ai-loop/) (GitHub Pages) · mirror: [t22000t-ai-loop.static.hf.space](https://t22000t-ai-loop.static.hf.space) (Hugging Face Space)
+**Live demo:** [ai-loop.app](https://ai-loop.app/) · mirror: [t22000t-ai-loop.static.hf.space](https://t22000t-ai-loop.static.hf.space) (Hugging Face Space)
 
 ---
 
