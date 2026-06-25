@@ -8,3 +8,7 @@ node_modules/
 .vscode/
 
 scripts/.fontcache/
+
+# local DNS import file, not part of the site
+*.zone
+ai-loop-dns.txt
