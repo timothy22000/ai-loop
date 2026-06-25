@@ -2,6 +2,11 @@
 
 Notable data and feature changes. Dates are when the snapshot was compiled.
 
+## 2026-06-25: Price refresh and presentation
+- Refreshed all public-company share prices and market caps to live quotes as of 25 June 2026 (deal data and the compiled-21-June snapshot are unchanged). Notable moves: NVDA from ~$5.1T to ~$4.73T, while memory and equipment names (Micron, Applied Materials, Arista) ran up.
+- Map now opens on the wider "All companies" view (supply-chain layer) by default; the toggle still collapses to the core money loop.
+- Gave each "Read this before you share it" caveat its own symbol.
+
 ## 2026-06-21: Research integration (capex gap, supply chain, look-through)
 - Folded three June 2026 research briefings (bear-thesis stress test, picks-and-shovels supply map, public-market look-through) into the pink-paper edition.
 - Money loop: added SpaceX as a node (now xAI's parent after the February 2026 merger) and five newly sourced deals: Anthropic's ~$1.25B/month Colossus rental, Google's ~$920M/month bridge compute, the xAI/SpaceX merger, Anthropic's ~$200B Google TPU commitment (closing the Alphabet loop), and OpenAI's $38B AWS deal. Surfaced the Alphabet/Anthropic and Nvidia/xAI cycles.
