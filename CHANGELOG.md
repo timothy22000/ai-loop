@@ -2,6 +2,10 @@
 
 Notable data and feature changes. Dates are when the snapshot was compiled.
 
+## 2026-06-26: IPO timing
+- OpenAI is reportedly leaning toward delaying its IPO to 2027 rather than list below a $1T valuation, amid tech-stock and post-IPO SpaceX volatility. Anthropic is proceeding with its confidential filing and would list first (reported late 2026). Updated OpenAI's IPO status in the tape and the look-through line; Anthropic noted as listing first. Source (verified): Yahoo Finance, 26 June 2026 (https://finance.yahoo.com/markets/stocks/articles/openai-considers-delaying-ipo-2027-221048362.html); also reported the same day by Bloomberg, CNBC and the NYT.
+- News current to 26 June 2026 (compiled date bumped). Deal edges and prices otherwise unchanged from the 25 June refresh.
+
 ## 2026-06-25: Price refresh and presentation
 - Refreshed all public-company share prices and market caps to live quotes as of 25 June 2026 (deal data and the compiled-21-June snapshot are unchanged). Notable moves: NVDA from ~$5.1T to ~$4.73T, while memory and equipment names (Micron, Applied Materials, Arista) ran up.
 - Map now opens on the wider "All companies" view (supply-chain layer) by default; the toggle still collapses to the core money loop.
