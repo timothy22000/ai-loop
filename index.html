@@ -462,6 +462,10 @@
     th,td{color:#111 !important;border-color:#ddd !important}
     .src-link,.deal-src,td.note .src,td.cat{color:#444 !important}
   }
+  .cite{font-size:.62em;vertical-align:super;color:var(--teal);text-decoration:none;margin-left:1px;font-weight:600}
+  .cite:hover{text-decoration:underline}
+  .unc{font-size:.6em;vertical-align:super;color:var(--red);margin-left:2px;font-weight:700;cursor:help;border-bottom:1px dotted}
+  .srcleg{font-family:'IBM Plex Mono',monospace;font-size:11px;color:var(--muted-soft);letter-spacing:.02em}
 </style>
 </head>
 <body>
@@ -761,7 +765,7 @@
     <div class="sec-head full">
       <div class="kicker teal"><span class="sect"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2.5 4.6 13.8H11l-1 7.7L19.4 10.1H12.7z"/></svg></span> The Other Circular Economy <span class="idx">04 / 06</span></div>
       <h2>The loop that's literal: metal, water, and watts.</h2>
-      <p>Circular economy also means the real thing: reusing the hardware, recycling the water, and powering it all. The hardest constraint is no longer chips, it is power, and this loop runs behind the buildout it has to keep up with.</p>
+      <p>Circular economy also means the real thing: reusing the hardware, recycling the water, and powering it all. The hardest constraint is no longer chips, it is power, and this loop runs behind the buildout it has to keep up with. <span class="srcleg">↗ links a source; ? marks a figure reported but not independently verified.</span></p>
     </div>
     <div class="mats">
 
@@ -769,27 +773,27 @@
         <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 8.5 7.5 4l3 5"/><path d="M19 11l2.5 4.5-5 .3"/><path d="M9 19.5 4 19l1.8-4.6"/><path d="M7.5 4 4.5 9M14 4l4.5 7M16.5 15.8 11 19.5"/><path d="M9 9l2 1M18.5 11l-1.5 1.8M9.5 17l1.5-2.2"/></svg>
         <div class="mtag">Hardware reuse</div>
         <div class="stat">90.9%</div>
-        <div class="stat-sub">Microsoft server reuse + recycle rate, FY24</div>
-        <p>Hyperscalers run tight hardware loops. <b>Oracle reports 99.6%</b> reuse, Google has resold <b>44M+ components</b> since 2015, and refurbishing can save up to 85% of manufacturing energy.</p>
-        <div class="flag">But globally only <b>22.3%</b> of e-waste is properly recycled, and just ~28% of operators even track decommissioned gear.</div>
+        <div class="stat-sub">Microsoft server reuse + recycle rate, FY24<a class="cite" href="https://www.microsoft.com/en-us/microsoft-cloud/blog/2025/04/17/sustainable-by-design-innovating-for-zero-waste/" target="_blank" rel="noopener" title="Source">↗</a></div>
+        <p>Hyperscalers run tight hardware loops. <b>Oracle reports 99.6%</b><a class="cite" href="https://www.oracle.com/a/ocom/docs/environmental-and-social-impact-report-2024.pdf" target="_blank" rel="noopener" title="Source">↗</a> reuse, Google has resold <b>44M+ components</b> since 2015<a class="cite" href="https://www.datacenterdynamics.com/en/news/google-emissions-jump-48-in-five-years-due-to-ai-data-center-boom/" target="_blank" rel="noopener" title="Source">↗</a>, and refurbishing can save up to 85% of manufacturing energy<sup class="unc" title="Reported, not independently verified">?</sup>.</p>
+        <div class="flag">But globally only <b>22.3%</b> of e-waste is properly recycled<a class="cite" href="https://unitar.org/about/news-stories/press/global-e-waste-monitor-2024-electronic-waste-rising-five-times-faster-documented-e-waste-recycling" target="_blank" rel="noopener" title="Source">↗</a>, and just ~28% of operators even track decommissioned gear<sup class="unc" title="Reported, not independently verified">?</sup>.</div>
       </div>
 
       <div class="mat">
         <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="2"/><ellipse cx="12" cy="12" rx="10" ry="4"/><ellipse cx="12" cy="12" rx="10" ry="4" transform="rotate(60 12 12)"/><ellipse cx="12" cy="12" rx="10" ry="4" transform="rotate(120 12 12)"/></svg>
         <div class="mtag">Power &amp; grid</div>
         <div class="stat">$163B</div>
-        <div class="stat-sub">GE Vernova power-equipment backlog</div>
-        <p>The binding constraint moved from chips to electricity. Gas-turbine slots are booked into <b>2029–30</b>, transformers are scarce, and interconnection queues run years. Every major lab has also gone nuclear: Microsoft is <b>restarting Three Mile Island</b> and Meta has lined up <b>~5–6 GW</b> of reactors.</p>
-        <div class="flag">The catch: most turbines, transformers and reactors will not deliver until <b>2029–2030+</b>, well after the demand arrives. Backlogs prove the demand is real (ASML €38.8B, Broadcom $73B), but the megawatts arrive late.</div>
+        <div class="stat-sub">GE Vernova power-equipment backlog<a class="cite" href="https://www.gevernova.com/sites/default/files/gev_webcast_pressrelease_04222026.pdf" target="_blank" rel="noopener" title="Source">↗</a></div>
+        <p>The binding constraint moved from chips to electricity. Gas-turbine slots are booked into <b>2029–30</b><a class="cite" href="https://www.power-eng.com/gas/turbines/data-centers-drive-record-surge-in-ge-vernova-power-equipment-orders-as-turbine-slots-tighten-through-2030/" target="_blank" rel="noopener" title="Source">↗</a>, transformers are scarce, and interconnection queues run years. Every major lab has also gone nuclear: Microsoft is <b>restarting Three Mile Island</b><a class="cite" href="https://www.world-nuclear-news.org/articles/constellation-to-restart-three-mile-island-unit-powering-microsoft" target="_blank" rel="noopener" title="Source">↗</a> and Meta has lined up <b>~5–6 GW</b> of reactors<a class="cite" href="https://about.fb.com/news/2026/01/meta-nuclear-energy-projects-power-american-ai-leadership/" target="_blank" rel="noopener" title="Source">↗</a>.</p>
+        <div class="flag">The catch: most turbines, transformers and reactors will not deliver until <b>2029–2030+</b>, well after the demand arrives. Backlogs prove the demand is real (ASML €38.8B<a class="cite" href="https://www.ainvest.com/news/asml-38-8-billion-backlog-tests-euv-supply-constraints-production-ai-driven-demand-2603/" target="_blank" rel="noopener" title="Source">↗</a>, Broadcom’s ~$73B AI backlog<a class="cite" href="https://www.tradingview.com/news/tradingview:d25164979744c:0-key-facts-broadcom-launches-new-chip-architecture-73b-order-backlog-partners-with-tsmc/" target="_blank" rel="noopener" title="Source">↗</a>), but the megawatts arrive late.</div>
       </div>
 
       <div class="mat">
         <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"><path d="M12 3c3.5 4.2 6 7.4 6 10.5A6 6 0 0 1 6 13.5C6 10.4 8.5 7.2 12 3Z"/><path d="M9.5 13.5a2.5 2.5 0 0 0 2.5 2.5" stroke-linecap="round"/></svg>
         <div class="mtag">Water</div>
         <div class="stat">⅔</div>
-        <div class="stat-sub">of new data centers sit in water-stressed areas</div>
-        <p>A big data center can draw up to <b>5M gallons a day</b>. Texas centers were on track for ~49B gallons in 2025, potentially <b>~399B by 2030</b>. New zero-water cooling designs aim to cut that sharply.</p>
-        <div class="flag">Critics call the green messaging overstated: U.S. residential power prices rose <b>7.1%</b> in 2025, double the rate of inflation, as the grid absorbs the load.</div>
+        <div class="stat-sub">of new data centers sit in water-stressed areas<a class="cite" href="https://www.bloomberg.com/graphics/2025-ai-impacts-data-centers-water-data/" target="_blank" rel="noopener" title="Source">↗</a></div>
+        <p>A big data center can draw up to <b>5M gallons a day</b><a class="cite" href="https://www.eesi.org/articles/view/data-centers-and-water-consumption" target="_blank" rel="noopener" title="Source">↗</a>. Texas centers were on track for ~49B gallons in 2025, potentially <b>~399B by 2030</b><a class="cite" href="https://harcresearch.org/news/texas-data-center-boom-could-consume-up-to-161-billion-gallons-of-water-annually-by-2030/" target="_blank" rel="noopener" title="Source">↗</a>. New zero-water cooling designs aim to cut that sharply.</p>
+        <div class="flag">Critics call the green messaging overstated: U.S. residential power prices rose <b>7.1%</b> in 2025, double the rate of inflation<a class="cite" href="https://www.brookings.edu/articles/how-rising-electric-rates-could-affect-the-2026-midterms/" target="_blank" rel="noopener" title="Source">↗</a>, as the grid absorbs the load.</div>
       </div>
 
     </div>
@@ -842,7 +846,7 @@
       <p>The same dozen names sit at the top of the index funds and pensions almost everyone holds, which is exactly what the central banks worry about.</p>
     </div>
 
-    <p class="conc-lead">Seven companies now make up <span class="hl">a third of the entire S&amp;P 500</span>. The other 493 share what's left.</p>
+    <p class="conc-lead">Seven companies now make up <span class="hl">a third of the entire S&amp;P 500</span><a class="cite" href="https://www.fool.com/research/magnificent-seven-sp-500/" target="_blank" rel="noopener" title="Source">↗</a>. The other 493 share what's left.</p>
     <button class="post-stat" id="postStat" type="button"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4.5 4.5l15 15M19.5 4.5l-15 15"/></svg> Post this stat</button>
 
     <div class="share-bar">
@@ -854,9 +858,9 @@
     </div>
 
     <div class="conc-grid">
-      <div class="cstat"><div class="v">~38%</div><div class="l">of the SMH chip ETF is just Nvidia + TSMC + Broadcom</div></div>
-      <div class="cstat"><div class="v">~22%</div><div class="l">of the Magnificent 7's weight is Nvidia alone</div></div>
-      <div class="cstat"><div class="v t">43 days</div><div class="l">for the DRAM memory ETF to reach $10B, a record</div></div>
+      <div class="cstat"><div class="v">~33%<sup class="unc" title="Reported, not independently verified">?</sup></div><div class="l">of the SMH chip ETF is just Nvidia + TSMC + Broadcom</div></div>
+      <div class="cstat"><div class="v">~22%</div><div class="l">of the Magnificent 7's weight is Nvidia alone<a class="cite" href="https://www.fool.com/research/magnificent-seven-sp-500/" target="_blank" rel="noopener" title="Source">↗</a></div></div>
+      <div class="cstat"><div class="v t">43 days</div><div class="l">for the DRAM memory ETF to reach $10B, a record<a class="cite" href="https://www.cnbc.com/2026/05/15/biggest-bottleneck-in-the-ai-buildup-fuels-dram-etf-to-record.html" target="_blank" rel="noopener" title="Source">↗</a></div></div>
     </div>
 
     <p class="conc-note">A standard S&amp;P 500 or Nasdaq-100 (QQQ) fund now embeds roughly a <b>one-third</b> AI-concentration bet. Sector ETFs like <b>SMH</b> and <b>SOXX</b> do not diversify that bet. They multiply it. Equal-weight funds such as RSP are one of the few ways to dilute it.</p>
@@ -868,23 +872,23 @@
         <div class="ltk">
           <div class="ltk-co">Microsoft &rarr; OpenAI</div>
           <div class="ltk-fig">~$135B</div>
-          <div class="ltk-sub">~27% stake, about 4.5% of Microsoft's market cap</div>
+          <div class="ltk-sub">~27% stake, about 4.5% of Microsoft's market cap<a class="cite" href="https://www.constellationr.com/blog-news/insights/microsoft-owns-27-openai-worth-135-billion" target="_blank" rel="noopener" title="Source">↗</a></div>
           <p>Plus a $250B Azure backlog. OpenAI's revenue share to Microsoft is now capped at $38B through 2030, no longer tied to an AGI declaration, and the model license is no longer exclusive.</p>
         </div>
         <div class="ltk">
           <div class="ltk-co">Alphabet &rarr; Anthropic + SpaceX</div>
           <div class="ltk-fig">~$135B + ~$87B</div>
-          <div class="ltk-sub">~14% of Anthropic (15% cap, nonvoting) and ~5% of SpaceX</div>
+          <div class="ltk-sub">~14% of Anthropic (15% cap, nonvoting) and ~5% of SpaceX<a class="cite" href="https://www.fool.com/investing/2026/06/11/could-alphabet-be-the-best-way-to-buy-spacex-and-a/" target="_blank" rel="noopener" title="Source">↗</a></div>
           <p>Together roughly 4.5&ndash;5% of Alphabet's cap, on top of Search, YouTube and Cloud. The cleanest single proxy for both.</p>
         </div>
         <div class="ltk">
           <div class="ltk-co">Amazon &rarr; Anthropic</div>
           <div class="ltk-fig">~$74&ndash;180B</div>
           <div class="ltk-sub">convertible notes + nonvoting preferred, re-marked each round</div>
-          <p>Higher torque, more complex structure. Amazon booked $9.5B and then $16.8B in gains as Anthropic's mark climbed.</p>
+          <p>Higher torque, more complex structure. Amazon booked $9.5B and then $16.8B in gains as Anthropic's mark climbed.<a class="cite" href="https://www.geekwire.com/2025/amazons-anthropic-investment-boosts-its-quarterly-profits-by-9-5b/" target="_blank" rel="noopener" title="Source">↗</a></p>
         </div>
       </div>
-      <div class="lt-flag">A reported "%" stake is not clean economic value: capped, nonvoting and conversion-dependent structures change what you would actually realize. And the premium retail wrappers are best avoided, VCX traded near a ~390% premium to NAV and DXYZ ran to ~2,000% before falling 80%+. Listed funds like Scottish Mortgage, ARK Venture and XOVR are cleaner routes.</div>
+      <div class="lt-flag">A reported "%" stake is not clean economic value: capped, nonvoting and conversion-dependent structures change what you would actually realize. And the premium retail wrappers are best avoided, DXYZ ran to a ~2,000% premium to NAV<a class="cite" href="https://www.acadian-asset.com/investment-insights/owenomics/stupidity-is-our-destiny-historic-closed-end-fund-overpricing" target="_blank" rel="noopener" title="Source">↗</a> before falling steeply, and VCX traded at a large multiple of its NAV. Listed funds like Scottish Mortgage, ARK Venture and XOVR are cleaner routes.</div>
     </div>
   </div>
 </section>
