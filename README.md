@@ -1,10 +1,10 @@
 # The AI Loop: pink-paper edition
 
+[![The AI Loop - an interactive map of the circular economy of AI](ai-loop.gif)](https://ai-loop.app/)
+
 > A reskin of The AI Loop in a pink-paper broadsheet style (salmon paper, serif headlines, Oxford-blue / teal / claret accents). Same sections and interactions as the base project; the June 2026 research expansion (SpaceX, the power layer, the seven-signal debate strip and the look-through proxies) landed in this edition first.
 
-**An interactive map of the circular economy of AI**: who invests in whom, who buys it back, the share prices, the energy it burns, and the bubble debate. A single self-contained web page built from public reporting, current through June 2026.
-
-![The AI Loop](og-image.png)
+**An interactive map of the circular economy of AI**: who invests in whom, who buys it back, the valuations, the energy it burns, and the bubble debate. A single self-contained web page built from public reporting, current through June 2026.
 
 > The money goes in circles. So do the chips. Nvidia funds OpenAI, which buys Nvidia chips. AMD hands OpenAI a slice of itself in exchange for orders. Microsoft, Amazon and Google pour billions into model labs that pour it back into their clouds.
 
@@ -36,6 +36,7 @@ Plain HTML, CSS and vanilla JavaScript in one file. No framework, no build chain
 ai-loop/
 ├── index.html              # the site (data block is generated; do not hand-edit it)
 ├── og-image.png            # 1200x630 social preview (regenerate with make_og.py)
+├── ai-loop.gif             # README hero: recorded walkthrough of the live map
 ├── favicon.svg             # icon set + web manifest (regenerate with make_icons.py)
 ├── favicon-32.png
 ├── apple-touch-icon.png
