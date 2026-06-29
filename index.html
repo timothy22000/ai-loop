@@ -11,15 +11,7 @@
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 <link rel="manifest" href="site.webmanifest">
 
-<!-- ============================================================
-     SOCIAL SHARING (OpenGraph + Twitter)
-     The image below uses a relative path so it works when og-image.png
-     sits in the same folder as this page. For best results on every
-     platform (LinkedIn in particular), once you know your live URL,
-     replace the two RELATIVE paths with ABSOLUTE ones, e.g.
-       <meta property="og:image" content="https://yoursite.com/og-image.png">
-     and uncomment the og:url line with your real address.
-     ============================================================ -->
+<!-- Social sharing: OpenGraph + Twitter -->
 <meta property="og:site_name" content="The AI Loop">
 <meta property="og:type" content="website">
 <meta property="og:title" content="The money goes in circles. So do the chips.">
@@ -466,6 +458,8 @@
   .cite:hover{text-decoration:underline}
   .unc{font-size:.6em;vertical-align:super;color:var(--red);margin-left:2px;font-weight:700;cursor:help;border-bottom:1px dotted}
   .srcleg{font-family:'IBM Plex Mono',monospace;font-size:11px;color:var(--muted-soft);letter-spacing:.02em}
+  .foot-card{display:block;margin-top:14px;width:100%;max-width:240px;height:auto;border:1px solid var(--line);border-radius:6px}
+  .foot-copy{margin-top:12px}
 </style>
 </head>
 <body>
@@ -988,6 +982,8 @@
         The AI Loop
       </div>
       <div class="foot-meta" style="margin-top:10px">An independent map of the circular economy of AI.</div>
+      <img class="foot-card" src="og-image.png" width="240" height="126" loading="lazy" alt="The AI Loop: a map of the circular economy of AI">
+      <div class="foot-meta foot-copy">&copy; 2026 Timothy Sum. MIT-licensed. <a href="https://github.com/timothy22000/ai-loop">Source on GitHub</a>.</div>
     </div>
     <div class="foot-meta">
       Compiled from public company filings, central-bank reports, and reporting by Bloomberg, CNBC, Fortune, the WSJ and others, current through <b id="meta-updated-foot">29 June 2026</b>.<br>
@@ -2444,22 +2440,17 @@ document.getElementById('companyRows').innerHTML = COMPANIES.map(c=>{
     <td>${e.source?`<a href="${e.source}" target="_blank" rel="noopener" class="src-link">${host(e.source)} ↗</a>`:'n/a'}</td></tr>`).join('');
 })();
 
-/* ============================================================
-   SETTINGS: fill these in once, then re-save the file.
-   Only contactEmail is required for the "Send a correction" button.
-   Everything else is optional; buttons you leave blank stay hidden,
-   and the share links auto-detect your address once the page is hosted.
-   ============================================================ */
+/* Site configuration. See README for setup. */
 const CONFIG = {
-  siteUrl:      "",                       // e.g. "https://yoursite.com/"  (blank = auto-detect once hosted)
-  contactEmail: "timothy22000@gmail.com", // CHANGE THIS, where corrections and messages arrive
-  formUrl:      "",                       // optional Google Form / Tally link for structured submissions
-  githubUrl:    "https://github.com/timothy22000/ai-loop", // optional repo URL (lets people open issues / pull requests)
-  xHandle:      "",                       // optional X handle without the @, used for tweet attribution
+  siteUrl:      "",                       // blank = auto-detect once hosted
+  contactEmail: "timothy22000@gmail.com", // where corrections and messages arrive
+  formUrl:      "",                       // optional structured-submission link
+  githubUrl:    "https://github.com/timothy22000/ai-loop", // optional repo URL
+  xHandle:      "",                       // optional X handle without the @
 
-  // Privacy-friendly analytics, both OFF by default. Set at most one.
-  plausibleDomain: "",                    // e.g. "theailoop.com" (loads plausible.io, cookieless)
-  goatCounterUrl:  ""                     // e.g. "https://YOURCODE.goatcounter.com/count" (cookieless)
+  // Privacy-friendly analytics, both off by default. Set at most one.
+  plausibleDomain: "",                    // set your domain to enable Plausible (cookieless)
+  goatCounterUrl:  ""                     // set your GoatCounter count URL to enable (cookieless)
 };
 
 /* Load analytics only if a value is set. Nothing third-party loads otherwise. */
