@@ -12,3 +12,6 @@ scripts/.fontcache/
 # local DNS import file, not part of the site
 *.zone
 ai-loop-dns.txt
+
+# local GIF capture artifacts, not part of the site
+gif-build/

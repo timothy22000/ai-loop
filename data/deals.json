@@ -2,16 +2,16 @@
   "meta": {
     "title": "The AI Loop",
     "tagline": "The circular economy of AI, mapped.",
-    "lastUpdated": "2026-06-26",
-    "lastUpdatedLabel": "26 June 2026",
+    "lastUpdated": "2026-06-29",
+    "lastUpdatedLabel": "29 June 2026",
     "note": "Compiled from public reporting. 'Reported' and 'letter of intent' figures are not confirmed cash. Not investment advice.",
-    "pricesAsOf": "25 June 2026",
+    "pricesAsOf": "29 June 2026",
     "sourcesNote": "Each deal links to a primary announcement or major-outlet report. Status reflects our reading of the latest reporting, not the source alone. Share prices are dated snapshots, not individually cited."
   },
   "tape": [
     {
       "label": "NVDA",
-      "value": "~$4.73T market cap"
+      "value": "~$4.70T market cap"
     },
     {
       "label": "2026 CAPEX",
@@ -518,20 +518,20 @@
       "to": "openai",
       "kind": "Custom accelerators",
       "group": "invest",
-      "amt": "Co-developed chips",
-      "status": "stalled",
-      "source": "https://investors.broadcom.com/news-releases/news-release-details/openai-and-broadcom-announce-strategic-collaboration-deploy-10",
-      "verified": "2025-10-13"
+      "amt": "Jalapeño chip",
+      "status": "confirmed",
+      "source": "https://openai.com/index/openai-broadcom-jalapeno-inference-chip/",
+      "verified": "2026-06-24"
     },
     {
       "from": "openai",
       "to": "broadcom",
       "kind": "Chip program",
       "group": "spend",
-      "amt": "10 GW / ~$10B",
-      "status": "stalled",
-      "source": "https://investors.broadcom.com/news-releases/news-release-details/openai-and-broadcom-announce-strategic-collaboration-deploy-10",
-      "verified": "2025-10-13"
+      "amt": "10 GW by 2029",
+      "status": "reported",
+      "source": "https://openai.com/index/openai-broadcom-jalapeno-inference-chip/",
+      "verified": "2026-06-24"
     },
     {
       "from": "softbank",
@@ -598,8 +598,8 @@
     {
       "company": "Nvidia",
       "ticker": "NVDA",
-      "price": "~$195",
-      "mktcap": "~$4.73T",
+      "price": "~$194",
+      "mktcap": "~$4.70T",
       "note": "Center of the loop: supplier and investor to OpenAI, xAI, CoreWeave, Anthropic",
       "source": "https://investor.nvidia.com/news/press-release-details/2025/OpenAI-and-NVIDIA-Announce-Strategic-Partnership-to-Deploy-10-Gigawatts-of-NVIDIA-Systems/default.aspx",
       "cat": "Chipmaker"
@@ -607,8 +607,8 @@
     {
       "company": "Microsoft",
       "ticker": "MSFT",
-      "price": "~$351",
-      "mktcap": "~$2.61T",
+      "price": "~$369",
+      "mktcap": "~$2.74T",
       "note": "Owns ~27% of OpenAI; $250B Azure backlog",
       "source": "https://blogs.microsoft.com/blog/2025/10/28/the-next-chapter-of-the-microsoft-openai-partnership/",
       "cat": "Hyperscaler"
@@ -616,8 +616,8 @@
     {
       "company": "Alphabet",
       "ticker": "GOOGL",
-      "price": "~$341",
-      "mktcap": "~$4.16T",
+      "price": "~$353",
+      "mktcap": "~$4.31T",
       "note": "~14% of Anthropic; TPU deal; large paper gains",
       "source": "https://www.cnbc.com/2026/04/24/google-to-invest-up-to-40-billion-in-anthropic-as-search-giant-spreads-its-ai-bets.html",
       "cat": "Hyperscaler"
@@ -625,8 +625,8 @@
     {
       "company": "Amazon",
       "ticker": "AMZN",
-      "price": "~$228",
-      "mktcap": "~$2.46T",
+      "price": "~$241",
+      "mktcap": "~$2.59T",
       "note": "Anthropic backer ($8B+); $50B OpenAI commitment",
       "source": "https://www.aboutamazon.com/news/company-news/amazon-invests-additional-5-billion-anthropic-ai",
       "cat": "Hyperscaler"
@@ -634,8 +634,8 @@
     {
       "company": "Broadcom",
       "ticker": "AVGO",
-      "price": "~$381",
-      "mktcap": "~$1.81T",
+      "price": "~$375",
+      "mktcap": "~$1.79T",
       "note": "OpenAI custom chips; AI revenue doubling",
       "source": "https://investors.broadcom.com/news-releases/news-release-details/openai-and-broadcom-announce-strategic-collaboration-deploy-10",
       "cat": "Chipmaker"
@@ -643,8 +643,8 @@
     {
       "company": "Meta",
       "ticker": "META",
-      "price": "~$544",
-      "mktcap": "~$1.38T",
+      "price": "~$565",
+      "mktcap": "~$1.43T",
       "note": "AMD warrant deal; CoreWeave customer; huge capex",
       "source": "https://www.tomshardware.com/tech-industry/artificial-intelligence/amd-meta-100-billion-deal",
       "cat": "Hyperscaler"
@@ -652,16 +652,16 @@
     {
       "company": "TSMC",
       "ticker": "TSM",
-      "price": "~$442",
-      "mktcap": "~$2.29T",
+      "price": "~$453",
+      "mktcap": "~$2.35T",
       "note": "Foundry for Nvidia, AMD and Broadcom",
       "cat": "Supply chain"
     },
     {
       "company": "Oracle",
       "ticker": "ORCL",
-      "price": "~$152",
-      "mktcap": "~$437B",
+      "price": "~$149",
+      "mktcap": "~$428B",
       "note": "~$300B OpenAI / Stargate deal; heavy debt",
       "source": "https://www.theregister.com/special-features/2025/11/04/nvidia-openai-and-the-trillion-dollar-loop/",
       "cat": "Cloud"
@@ -669,8 +669,8 @@
     {
       "company": "AMD",
       "ticker": "AMD",
-      "price": "~$529",
-      "mktcap": "~$862B",
+      "price": "~$540",
+      "mktcap": "~$881B",
       "note": "Gave OpenAI and Meta ~10% warrant deals",
       "source": "https://ir.amd.com/news-events/press-releases/detail/1260/amd-and-openai-announce-strategic-partnership-to-deploy-6-gigawatts-of-amd-gpus",
       "cat": "Chipmaker"
@@ -694,8 +694,8 @@
     {
       "company": "Constellation",
       "ticker": "CEG",
-      "price": "~$272",
-      "mktcap": "~$97B",
+      "price": "~$260",
+      "mktcap": "~$93B",
       "note": "Nuclear power deals with Microsoft and Meta",
       "cat": "Energy"
     },
@@ -711,15 +711,15 @@
     {
       "company": "Nebius",
       "ticker": "NBIS",
-      "price": "~$257",
-      "mktcap": "~$65B",
+      "price": "~$259",
+      "mktcap": "~$66B",
       "note": "Neocloud; $2B Nvidia stake; +220% YTD",
       "cat": "Cloud"
     },
     {
       "company": "Vertiv",
       "ticker": "VRT",
-      "price": "~$327",
+      "price": "~$306",
       "mktcap": "n/a",
       "note": "Data-center cooling and power; +177% YoY",
       "cat": "Infrastructure"
@@ -727,7 +727,7 @@
     {
       "company": "Micron",
       "ticker": "MU",
-      "price": "~$1,228",
+      "price": "~$1,119",
       "mktcap": "n/a",
       "note": "HBM memory super-cycle; new highs",
       "cat": "Supply chain"
@@ -735,7 +735,7 @@
     {
       "company": "Arm",
       "ticker": "ARM",
-      "price": "~$357",
+      "price": "~$343",
       "mktcap": "n/a",
       "note": "Chip IP for AI silicon; +283% YTD",
       "cat": "Chipmaker"
@@ -743,7 +743,7 @@
     {
       "company": "ASML",
       "ticker": "ASML",
-      "price": "~$1,840",
+      "price": "~$1,873",
       "mktcap": "n/a",
       "note": "EUV lithography monopoly",
       "cat": "Supply chain"
@@ -751,15 +751,15 @@
     {
       "company": "Super Micro",
       "ticker": "SMCI",
-      "price": "~$32",
-      "mktcap": "~$21B",
+      "price": "~$30",
+      "mktcap": "~$20B",
       "note": "AI servers; volatile on dilutive raise",
       "cat": "Infrastructure"
     },
     {
       "company": "Oklo",
       "ticker": "OKLO",
-      "price": "~$52",
+      "price": "~$53",
       "mktcap": "~$9B",
       "note": "Small modular reactors (Meta); well off its highs",
       "cat": "Energy"
@@ -767,8 +767,8 @@
     {
       "company": "GE Vernova",
       "ticker": "GEV",
-      "price": "~$1,092",
-      "mktcap": "~$293B",
+      "price": "~$1,104",
+      "mktcap": "~$297B",
       "note": "Purest power-bottleneck play: gas turbines, grid and electrification, with a $163B backlog and turbine slots booked into 2029–30.",
       "cat": "Power"
     },
@@ -776,7 +776,7 @@
       "company": "Eaton",
       "ticker": "ETN",
       "price": "n/a",
-      "mktcap": "~$163B",
+      "mktcap": "~$160B",
       "note": "Diversified electrical: switchgear, UPS and busways, plus Boyd Thermal for liquid cooling. The most reasonably valued large-cap electrical name.",
       "cat": "Power"
     },
@@ -800,7 +800,7 @@
       "company": "Arista Networks",
       "ticker": "ANET",
       "price": "n/a",
-      "mktcap": "~$212B",
+      "mktcap": "~$207B",
       "note": "Number-one AI Ethernet switching; FY revenue guide ~$11.5B with 52-week chip lead times as demand outruns supply.",
       "cat": "Networking"
     },
@@ -808,7 +808,7 @@
       "company": "Applied Materials",
       "ticker": "AMAT",
       "price": "n/a",
-      "mktcap": "~$518B",
+      "mktcap": "~$553B",
       "note": "Broadest wafer-fab-equipment franchise; captures more than half of incremental HBM tool value, the cheapest of the big-three on EV/EBITDA.",
       "cat": "Equipment"
     },
@@ -832,7 +832,7 @@
       "company": "Lockheed Martin",
       "ticker": "LMT",
       "price": "n/a",
-      "mktcap": "~$116B",
+      "mktcap": "~$117B",
       "note": "Defense prime; space is more than 15% of revenue on a $160B+ backlog. The best risk-adjusted space exposure with real earnings.",
       "cat": "Space"
     },
@@ -856,7 +856,7 @@
       "company": "Iridium",
       "ticker": "IRDM",
       "price": "n/a",
-      "mktcap": "~$4B",
+      "mktcap": "~$6B",
       "note": "Cash-generative LEO voice, data and IoT; the most financially sound pure-play satellite operator.",
       "cat": "Space"
     },

@@ -21,8 +21,8 @@ alphabet,anthropic,Alphabet,Anthropic,Equity stake,invest,~14% · +$40B,confirme
 nvidia,anthropic,Nvidia,Anthropic,Equity investment,invest,Up to $10B,reported,2025-11-18,https://www.bloomberg.com/news/articles/2025-11-18/microsoft-nvidia-to-invest-up-to-15-billion-in-anthropic
 microsoft,anthropic,Microsoft,Anthropic,Equity investment,invest,Up to $5B,reported,2025-11-18,https://www.bloomberg.com/news/articles/2025-11-18/microsoft-nvidia-to-invest-up-to-15-billion-in-anthropic
 anthropic,microsoft,Anthropic,Microsoft,Cloud commitment,spend,$30B Azure,reported,2025-11-18,https://www.bloomberg.com/news/articles/2025-11-18/microsoft-nvidia-to-invest-up-to-15-billion-in-anthropic
-broadcom,openai,Broadcom,OpenAI,Custom accelerators,invest,Co-developed chips,stalled,2025-10-13,https://investors.broadcom.com/news-releases/news-release-details/openai-and-broadcom-announce-strategic-collaboration-deploy-10
-openai,broadcom,OpenAI,Broadcom,Chip program,spend,10 GW / ~$10B,stalled,2025-10-13,https://investors.broadcom.com/news-releases/news-release-details/openai-and-broadcom-announce-strategic-collaboration-deploy-10
+broadcom,openai,Broadcom,OpenAI,Custom accelerators,invest,Jalapeño chip,confirmed,2026-06-24,https://openai.com/index/openai-broadcom-jalapeno-inference-chip/
+openai,broadcom,OpenAI,Broadcom,Chip program,spend,10 GW by 2029,reported,2026-06-24,https://openai.com/index/openai-broadcom-jalapeno-inference-chip/
 softbank,openai,SoftBank,OpenAI,Capital (round),invest,$30B,confirmed,2026-03-31,https://www.cnbc.com/2026/03/31/openai-funding-round-ipo.html
 anthropic,spacex,Anthropic,SpaceX,Compute rental,spend,~$1.25B/mo · Colossus,confirmed,2026-05-20,https://techcrunch.com/2026/05/20/anthropic-will-pay-xai-1-25-billion-per-month-for-compute/
 alphabet,spacex,Alphabet,SpaceX,Bridge compute,spend,~$920M/mo,confirmed,2026-06-05,https://techcrunch.com/2026/06/05/google-will-pay-spacex-920m-per-month-for-compute/
