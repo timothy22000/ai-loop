@@ -572,7 +572,7 @@
 
       <div class="graph-body">
         <div class="canvas-wrap">
-          <svg class="graph show-ext" id="graph" viewBox="-135 -95 1330 1010" role="img" aria-label="Interactive network graph of AI company investments and spending">
+          <svg class="graph show-ext" id="graph" viewBox="-300 -171 1730 1320" role="img" aria-label="Interactive network graph of AI company investments and spending">
             <g id="orbitLayer">
               <g id="ring-rot">
                 <ellipse class="orbit" cx="500" cy="400" rx="330" ry="250" stroke-dasharray="2 9"/>
@@ -2289,7 +2289,7 @@ function advanceLoop(){ traceLoop(loopIndex+1); }
 
 /* ---- extended (supply chain) view ---- */
 const graphSvg=document.getElementById('graph');
-const CORE_VB=[0,0,1000,760], EXT_VB=[-135,-95,1330,1010];
+const CORE_VB=[0,0,1000,760], EXT_VB=[-300,-171,1730,1320];
 function setVB(v){ graphSvg.setAttribute('viewBox', v.join(' ')); }
 function tweenVB(to){
   if(reduceMotion){ setVB(to); return; }
