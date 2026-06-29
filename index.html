@@ -802,7 +802,7 @@
     <div class="sec-head full">
       <div class="kicker"><span class="sect"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="5" cy="6.5" r="2"/><circle cx="19" cy="6.5" r="2"/><circle cx="12" cy="18" r="2"/><path d="M6.7 7.8 10.6 16M17.3 7.8 13.4 16M7 6.5h10"/></svg></span> The Connected Companies <span class="idx">05 / 06</span></div>
       <h2>Everyone in the loop, and where they trade.</h2>
-      <p>Prices are snapshots from late June 2026 and move constantly, so treat them as a sense of scale, not a quote. Private valuations reflect the latest funding rounds.</p>
+      <p>Every company in the loop and the role it plays. Private valuations reflect the latest funding rounds.</p>
     </div>
     <div class="co-tools">
       <input class="co-search" id="coSearch" type="search" placeholder="Search company, ticker, role..." aria-label="Search companies">
@@ -824,7 +824,7 @@
     <div class="tbl-scroll">
       <table>
         <thead>
-          <tr><th>Company</th><th>Ticker</th><th>Category</th><th style="text-align:right">~Price</th><th style="text-align:right">~Mkt cap</th><th>Role in the loop</th></tr>
+          <tr><th>Company</th><th>Ticker</th><th>Category</th><th>Role in the loop</th></tr>
         </thead>
         <tbody id="companyRows"></tbody>
       </table>
@@ -945,7 +945,7 @@
       </div>
       <div class="method-card">
         <h4>What is dated, not individually cited</h4>
-        <p>Share prices and market caps are snapshots as of <span class="mono" id="meta-pricesasof">June 2026</span> and move constantly, so they are dated rather than separately sourced. Private valuations come from the latest funding rounds. Forward-looking figures are flagged as estimates. The optional supply-chain layer ("All companies") shows well-established structural relationships, such as who fabricates whose chips, as context rather than individually sourced deals.</p>
+        <p>Private valuations come from the latest funding rounds. Forward-looking figures are flagged as estimates. The optional supply-chain layer ("All companies") shows well-established structural relationships, such as who fabricates whose chips, as context rather than individually sourced deals.</p>
       </div>
     </div>
 
@@ -966,7 +966,6 @@
       <h3>Read this before you share it <span class="tag">Methodology</span></h3>
       <ul>
         <li><b>Reported is not confirmed.</b> Many headline numbers (Nvidia's $100B, Oracle's ~$300B, the $250B Azure commitment, Broadcom's custom-chip phase) are letters of intent or multi-year commitments, not cash already spent. Several were explicitly unsigned or stalled in early-to-mid 2026.</li>
-        <li><b>Prices are snapshots.</b> Share prices and market caps were observed in late June 2026 and change every second. Sources sometimes disagree on a single company's market cap. Do not trade off these figures.</li>
         <li><b>Private valuations are round marks.</b> The OpenAI, Anthropic and SpaceX/xAI numbers come from their latest funding rounds and may include conditional or compute-credit components, not liquid market value.</li>
         <li><b>Run-rate is not revenue.</b> Headline annualized run-rate figures (OpenAI's ~$20B+, Anthropic's ~$47B) take a single strong month and multiply by twelve. Full-year realized revenue is far smaller, and the gap worth tracking is 2026 capex against <b>realized</b> revenue, not against run-rate.</li>
         <li><b>Revenue is counted differently.</b> Anthropic books cloud-reseller revenue on a gross basis; rivals argue the comparable net figure is lower. Treat cross-company revenue and margin comparisons as contested, not settled.</li>
@@ -1006,10 +1005,6 @@
     "sourcesNote": "Each deal links to a primary announcement or major-outlet report. Status reflects our reading of the latest reporting, not the source alone. Share prices are dated snapshots, not individually cited."
   },
   "tape": [
-    {
-      "label": "NVDA",
-      "value": "~$4.70T market cap"
-    },
     {
       "label": "2026 CAPEX",
       "value": "~$725–800B planned"
@@ -2406,7 +2401,6 @@ document.getElementById('companyRows').innerHTML = COMPANIES.map(c=>{
   const hay=(c.company+' '+c.ticker+' '+c.cat+' '+c.note).toLowerCase().replace(/"/g,'');
   return `<tr data-cat="${c.cat}" data-search="${hay}">
   <td class="co" data-label="Company">${c.company}</td><td class="tk" data-label="Ticker">${c.ticker}</td><td class="cat" data-label="Category">${c.cat}</td>
-  <td class="num" data-label="~Price">${c.price}</td><td class="num" data-label="~Mkt cap">${c.mktcap}</td>
   <td class="note" data-label="Role in the loop">${c.note}${c.source?` <a class="src" href="${c.source}" target="_blank" rel="noopener" title="Source" aria-label="Source for ${c.company}">↗</a>`:''}</td></tr>`;
 }).join('');
 
@@ -2444,7 +2438,6 @@ document.getElementById('companyRows').innerHTML = COMPANIES.map(c=>{
     <td><span class="status ${e.status}">${statusLabel(e.status)}</span></td>
     <td class="mono">${e.verified||'n/a'}</td>
     <td>${e.source?`<a href="${e.source}" target="_blank" rel="noopener" class="src-link">${host(e.source)} ↗</a>`:'n/a'}</td></tr>`).join('');
-  const pa=document.getElementById('meta-pricesasof'); if(pa && DATA.meta.pricesAsOf) pa.textContent=DATA.meta.pricesAsOf;
 })();
 
 /* ============================================================
