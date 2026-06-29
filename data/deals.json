@@ -70,6 +70,10 @@
       "teal": true
     },
     {
+      "label": "OPENAI CHIP",
+      "value": "Jalapeño w/ Broadcom"
+    },
+    {
       "label": "AMD",
       "value": "warrant ~10% to OpenAI"
     },
