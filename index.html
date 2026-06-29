@@ -144,7 +144,7 @@
   .canvas-wrap{position:relative;overflow-x:auto;border-right:1px solid var(--line)}
   @media(max-width:900px){.canvas-wrap{border-right:none;border-bottom:1px solid var(--line)}}
   svg.graph{display:block;width:100%;min-width:720px;height:auto}
-  .scroll-hint{position:absolute;left:16px;bottom:13px;font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.14em;color:var(--muted-soft);pointer-events:none;text-transform:uppercase}
+  .scroll-hint{position:absolute;left:14px;bottom:12px;font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.14em;color:var(--muted-soft);pointer-events:none;text-transform:uppercase;background:var(--ink);padding:3px 9px;border-radius:6px;box-shadow:0 1px 6px -2px rgba(70,55,20,.28)}
 
   .orbit{fill:none;stroke:var(--line);opacity:.9}
   .edge{fill:none;stroke-linecap:round;transition:opacity .25s,stroke-width .25s}
@@ -300,14 +300,7 @@
   .caveats ul{margin:0;padding:0;list-style:none}
   .caveats li{padding:14px 0 14px 30px;border-top:1px solid var(--line-soft);position:relative;font-size:.95rem;color:var(--ink-soft)}
   .caveats li:first-child{border-top:none}
-  .caveats li::before{position:absolute;left:0;top:14px;font-family:'IBM Plex Mono';color:var(--red);font-weight:700}
-  .caveats li:nth-child(1)::before{content:"\2020"}   /* dagger - reported, not confirmed */
-  .caveats li:nth-child(2)::before{content:"\00A7"}   /* section - prices are snapshots */
-  .caveats li:nth-child(3)::before{content:"\25CB"}   /* ring - round marks */
-  .caveats li:nth-child(4)::before{content:"\00D7"}   /* multiply - run-rate x12 */
-  .caveats li:nth-child(5)::before{content:"\2260"}   /* not-equal - counted differently */
-  .caveats li:nth-child(6)::before{content:"\2192"}   /* arrow - forward-looking */
-  .caveats li:nth-child(7)::before{content:"\25C6"}   /* diamond - map, not advice */
+  .caveats li::before{content:"\25C6";position:absolute;left:0;top:14px;font-family:'IBM Plex Mono';color:var(--red);font-weight:700}
   .caveats li b{color:var(--bone)}
 
   footer{border-top:1px solid var(--line);padding:50px 0 64px;margin-top:34px}
@@ -2445,7 +2438,7 @@ document.getElementById('companyRows').innerHTML = COMPANIES.map(c=>{
   const by=Object.fromEntries(NODES.map(n=>[n.id,n.name]));
   const host=u=>{try{return new URL(u).hostname.replace('www.','');}catch(e){return 'link';}};
   const rows=document.getElementById('sourceRows');
-  if(rows) rows.innerHTML = EDGES.map(e=>`<tr>
+  if(rows) rows.innerHTML = EDGES.slice().sort((a,b)=>(b.verified||'').localeCompare(a.verified||'')).map(e=>`<tr>
     <td class="mono" style="white-space:nowrap">${by[e.from]} → ${by[e.to]}</td>
     <td>${e.amt} · ${e.kind}</td>
     <td><span class="status ${e.status}">${statusLabel(e.status)}</span></td>
