@@ -66,6 +66,10 @@ def inject(d):
     if "<!-- DATA:START -->" not in html:
         sys.exit("ERROR: DATA markers not found in index.html")
     html = re.sub(r"<!-- DATA:START -->.*?<!-- DATA:END -->", lambda m: block, html, flags=re.DOTALL)
+    # keep the static "compiled" date spans in sync with the data (no-JS / crawlers)
+    label = d["meta"].get("lastUpdatedLabel", "")
+    for sid in ("meta-updated", "meta-updated-foot"):
+        html = re.sub(rf'(id="{sid}">)[^<]*(<)', lambda m: m.group(1) + label + m.group(2), html)
     HTML.write_text(html, encoding="utf-8")
 
 def export_csv(d):
@@ -100,6 +104,11 @@ def main():
         m = re.search(r'<script type="application/json" id="loop-data">\n(.*?)\n</script>', html, re.DOTALL)
         if not m or m.group(1) != expected:
             sys.exit("Out of sync: run `python scripts/build.py` and commit the result.")
+        label = d["meta"].get("lastUpdatedLabel", "")
+        for sid in ("meta-updated", "meta-updated-foot"):
+            ms = re.search(rf'id="{sid}">([^<]*)<', html)
+            if ms and ms.group(1) != label:
+                sys.exit(f"Out of sync: {sid} shows '{ms.group(1)}' but data says '{label}'. Run build.py.")
         print("Check OK: index.html is in sync with data/deals.json")
         return
 
