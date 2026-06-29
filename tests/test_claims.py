@@ -1,4 +1,5 @@
 import json
+import re
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -53,3 +54,14 @@ def test_uncertain_or_needs_update_claims_are_not_high_confidence_without_notes(
 
 def test_no_em_dashes_in_claim_data():
     assert "\u2014" not in json.dumps(CLAIMS, ensure_ascii=False)
+
+
+def test_inline_citations_trace_to_registry():
+    """Every inline citation (class="cite") in the site must resolve to a source
+    in the claim registry, so the registry stays the single source of truth."""
+    html = (ROOT / "index.html").read_text(encoding="utf-8")
+    cite_urls = re.findall(r'<a class="cite" href="([^"]+)"', html)
+    assert cite_urls, "no inline citations found in index.html"
+    src_urls = {s["url"] for s in CLAIMS["sources"]}
+    missing = sorted({u for u in cite_urls if u not in src_urls})
+    assert not missing, f"inline citations missing from claim registry: {missing}"
